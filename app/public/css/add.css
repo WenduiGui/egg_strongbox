@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.home{
+    width: 100%;
+    height: 100%;
+}
+.AddHeader{
+    width: 100%;
+    height: 0.90rem;
+    background-color: black;
+}
+.AddHeader .funt{
+    float: left;
+    color: white;
+    font-size: .32rem;
+    margin-left: 2.5rem;
+    margin-top: 0.2rem;
+}
+.footer {
+    width: 100%;
+    height: 80%
+  }
+  .footer .tp{
+    display: inline;
+    margin-top: 1.8rem;
+    margin-left: 2.7rem;
+}
+.footer .tjbxx {
+    color:#010101;
+    float: left;
+    margin-left: 2.2rem;
+    font-size: 0.45rem;
+}
+.footer .sys{
+    margin-left: 0.6rem;
+    margin-top: 0.27rem;
+    font-size: 0.3rem;
+    float: left;
+    color: #9e9e9e;
+}
+.footer .tz{
+    float: left;
+    font-size: 0.35rem;
+    text-decoration: none;
+    margin-top: 5rem;
+    margin-left: 2rem;
+    color: #068cff;
+}
