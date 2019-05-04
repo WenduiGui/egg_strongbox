@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header {
+    width: 7.5rem;
+    height: 0.9rem;
+    background-color: black;
+  }
+  .pic {
+    width: 0.56rem;
+    height: 0.56rem;
+    float: left;
+    margin-left: 0.3rem;
+    margin-top: 0.15rem;
+  }
+  .src {
+    width: 0.56rem;
+    height: 0.56rem;
+    float: left;
+    color: white;
+    margin-left: 3.8rem;
+    margin-top: 0.15rem;
+  }
+  
+  .bt1 {
+    font-size: 22px;
+    color: white;
+    float: left;
+    margin-top: 0.2rem;
+    margin-left: 2rem;
+  }
+  .banner{
+    width: 7.5rem;
+    height: 3.84rem;
+
+}
+.i1{
+    height: 3.8rem;
+    width: 7.5rem;
+}
+.container{
+  width: 7.5rem;
+  height: 7.3rem;
+}
+.pic5{
+  width: 2.4rem;
+  height: 2.47rem;
+  float: left;
+  margin-left: 2.56rem;
+  margin-top: 1.46rem;
+}
+.bt{
+  font-size: 24px;
+  float: left;
+  clear: both;
+  color: black;
+  margin-left: 2.5rem;
+  margin-top: 0.4rem;
+}
+.sj{
+  font-size: 24px;
+  float: left;
+  clear: both;
+  color: #b9b9b9;
+  margin-left: 2rem;
+  margin-top: 0.2rem;
+}
+.footer{
+  width: 7.5rem;
+  height: 1.3rem;
+  background-color: #0092ff;
+}
+.sp5{
+  color:white;
+  font-size: 30px;
+  float: left;
+  margin-left: 2.5rem;
+  margin-top: 0.3rem;
+}

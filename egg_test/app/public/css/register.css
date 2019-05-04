@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#RegHeader {
+    width: 7.5rem;
+    height: 0.93rem;
+    background-color: black;
+}
+
+#RegHeader .Regimg {
+    width: 0.23rem;
+    height: 0.35rem;
+    font-size: 0.37rem;
+    float: left;
+    margin-top: 0.3rem;
+    margin-left: 0.22rem;
+}
+
+#RegHeader .Regzhuce {
+    color: #ffffff;
+    font-size: 0.34rem;
+    float: left;
+    margin-left: 2.97rem;
+    line-height: 0.93rem;
+}
+
+#RegBody {
+    width: 7.5rem;
+    height: 12.06rem;
+    background-color: rgb(255, 255, 255);
+}
+
+#RegBody .Tell {
+    width: 6.95rem;
+    height: 1rem;
+    border-bottom: 1px solid black;
+    margin: 0 auto;
+    margin-top: 0.6rem;
+    box-sizing: border-box;
+}
+
+#RegBody .Tell .Phone {
+    float: left;
+    font-size: 0.3rem;
+    margin-top: 0.46rem;
+    margin-left: 0.02rem;
+}
+
+#RegBody .Tell .Num {
+    float: left;
+    border: 0px;
+    width: 5.3rem;
+    height: 0.6rem;
+    margin-left: 0.9rem;
+    margin-top: 0.3rem;
+    font-size: 0.33rem;
+}
+
+#RegBody .Captcha {
+    width: 6.95rem;
+    height: 1rem;
+    border-bottom: 1px solid black;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+#RegBody .Captcha .Yzm {
+    float: left;
+    font-size: 0.3rem;
+    margin-top: 0.46rem;
+    margin-left: 0.02rem;
+}
+
+#RegBody .Captcha .inputYzm {
+    float: left;
+    border: 0px;
+    width: 3.2rem;
+    height: 0.6rem;
+    margin-left: 0.6rem;
+    margin-top: 0.3rem;
+    font-size: 0.33rem;
+}
+
+#RegBody .Captcha .btn {
+    float: left;
+    color: #0395ff;
+    border: 0px;
+    background-color: #fff;
+    font-size: 0.31rem;
+    margin-top: 0.3rem;
+    width: 2.2rem;
+    height: 0.6rem;
+}
+
+#RegBody .Password {
+    width: 6.95rem;
+    height: 1rem;
+    border-bottom: 1px solid black;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+#RegBody .Password .Cipher {
+    float: left;
+    font-size: 0.3rem;
+    margin-top: 0.46rem;
+    margin-left: 0.02rem;
+}
+
+#RegBody .Password .newCipher {
+    float: left;
+    border: 0px;
+    width: 5.3rem;
+    height: 0.6rem;
+    margin-left: 0.9rem;
+    margin-top: 0.3rem;
+    font-size: 0.33rem;
+}
+
+#RegBody .Register {
+    width: 6.94rem;
+    height: 0.88rem;
+    background-color: #0091fe;
+    margin-top: 0.58rem;
+    margin-left: 0.26rem;
+    border-radius: 2%;
+    color: #fff;
+    font-size: 0.33rem;
+    line-height: 0.88rem;
+    text-align: center;
+}
+
+#RegBody .Ystk {
+    width: 7.5rem;
+    height: 0.33rem;
+    margin-top: 5.9rem;
+}
+
+#RegBody .Ystk .tongyi {
+    color: #9c9c9c;
+    font-size: 0.3rem;
+    margin-left: 2.1rem;
+    float: left;
+}
+
+#RegBody .Ystk .yinsi {
+    color: #008dfd;
+}
+
+#RegBody a {
+    text-decoration: none;
+}

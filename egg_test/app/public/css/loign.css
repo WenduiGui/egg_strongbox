@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* #big{
+    width: 100%;
+    height: 100%;
+} */
+#LoignHeader{
+    width: 7.5rem;
+    height: 0.88rem;
+    background-image: url(../img/LoignHeader.jpg);
+    background-size:100% 100%;
+}
+.back{
+    margin-left: 0.3rem;
+    width: 0.2rem;
+    height: 0.38rem;
+    margin-bottom: 0.42rem;
+}
+#LoignBody{
+    width: 7.5rem;
+    height: 8.1rem;
+}
+.Loigpic{
+    width: 100%;
+    height: 100%;
+}
+#LoignFooter{
+    background-color: #ffffff;
+    border-bottom: 1px solid #d9d9db;
+    border-top: 1px solid #d9d9db;
+    box-sizing: border-box;
+    width: 7.5rem;
+    height: 1.11rem;
+    margin-top:0.25rem ;
+}
+#LoignFooter a{
+    text-decoration: none;
+    
+}
+#LoignFooter .Out{
+    color:red;
+    font-size: 0.3rem;
+    text-align: center;
+    line-height: 1.11rem;
+}
