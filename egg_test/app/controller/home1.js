@@ -55,13 +55,36 @@ class Home1Controller extends Controller {
     async open() {
         await this.ctx.render("open", {
             box: "米洛保险箱",
-            list: [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+            list: [{
+                    "door": "开门",
+                    "time": "2分钟前",
+                    "address": "杭州",
+                },
+                {
+                    "door": "开门",
+                    "time": "2分钟前",
+                    "address": "杭州",
+                },
+                {
+                    "door": "开门",
+                    "time": "2分钟前",
+                    "address": "杭州",
+                },
+                {
+                    "door": "开门",
+                    "time": "2分钟前",
+                    "address": "杭州",
+                },
+                {
+                    "door": "开门",
+                    "time": "2分钟前",
+                    "address": "杭州",
+                },
+                {
+                    "door": "开门",
+                    "time": "2分钟前",
+                    "address": "杭州",
+                },
             ],
             // students: ["小明", "小红", "小亮"]
         })
@@ -69,13 +92,36 @@ class Home1Controller extends Controller {
     async recoed() {
         await this.ctx.render("recoed", {
             box: "米洛保险箱",
-            list: [
-                "",
-                "",
-                "",
-                "",
-                "",
-                "",
+            list: [{
+                    "door": "有人移动保险箱",
+                    "time": "2分钟前",
+                    "address": "杭州",
+                },
+                {
+                    "door": "保险箱点亮低于20",
+                    "time": "25分钟前",
+                    "address": "广东",
+                },
+                {
+                    "door": "修改配置",
+                    "time": "2天前",
+                    "address": "上海",
+                },
+                {
+                    "door": "保险箱电量低于20",
+                    "time": "18天前",
+                    "address": "上海",
+                },
+                {
+                    "door": "有人移动保险箱",
+                    "time": "2分钟前",
+                    "address": "杭州",
+                },
+                {
+                    "door": "有人移动保险箱",
+                    "time": "2分钟前",
+                    "address": "杭州",
+                },
             ],
             // teachers: ["张三", "李四", "王五"]
         })
