@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>login</title>
+    <link rel="stylesheet" href="../public/css/home.css">
+    <script src="../public/js/fontsizeset.js"></script>
+</head>
+
+<body>
+    <div id="big">
+        <div id="Header">
+            <img src="./../public/img/tab_safebox_pre@3x.png" alt="">
+        </div>
+        <div id="Body">
+            <div class="Name">
+                <label class="name">{{name}}</label>
+                <input type="text" placeholder="请输入用户名" class="User_name">
+            </div>
+            <div class="Pass">
+                <label class="pass">{{pass}}</label>
+                <input type="password" placeholder="请输入密码" class="Input_password">
+            </div>
+        </div>
+        <div id="Footer">
+            <a href="/Add_to">
+                <button class="Register">登陆</button>
+            </a>
+            <div class="zhuce">
+                <a href='/register' class="register">{{register}}</a>
+                <a href='/Forget_password' class="Forget_password">{{Forget_password}}</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
