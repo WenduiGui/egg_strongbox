@@ -22,38 +22,38 @@ class Home1Controller extends Controller {
                 "四级",
             ],
 
-            divstyle1: { "background-color": "#dae1e6" },
-            divstyle2: { "background-color": "#dae1e6" },
-            divstyle3: { "background-color": "#dae1e6" },
-            divstyle4: { "background-color": "#dae1e6" },
-            btn1() {
-                this.divstyle1 = { "background-color": "#0091ff" };
-                this.divstyle2 = { "background-color": "#dae1e6" };
-                this.divstyle3 = { "background-color": "#dae1e6" };
-                this.divstyle4 = { "background-color": "#dae1e6" };
-            },
-            btn2() {
-                this.divstyle1 = { "background-color": "#0091ff" };
-                this.divstyle2 = { "background-color": "#0091ff" };
-                this.divstyle3 = { "background-color": "#dae1e6" };
-                this.divstyle4 = { "background-color": "#dae1e6" };
-            },
-            btn3() {
-                this.divstyle1 = { "background-color": "#0091ff" };
-                this.divstyle2 = { "background-color": "#0091ff" };
-                this.divstyle3 = { "background-color": "#0091ff" };
-                this.divstyle4 = { "background-color": "#dae1e6" };
-            },
-            btn4() {
-                this.divstyle1 = { "background-color": "#0091ff" };
-                this.divstyle2 = { "background-color": "#0091ff" };
-                this.divstyle3 = { "background-color": "#0091ff" };
-                this.divstyle4 = { "background-color": "#0091ff" };
-            },
-            boxurl: "../public/img/tab_safebox_pre@2x.png",
-            openurl: "../public/img/tab_opendoor@2x.png",
-            recoedurl: "../public/img/tab_alarm@2x.png",
-            userurl: "../public/img/tab_associated@2x.png",
+            // divstyle1: { "background-color": "#dae1e6" },
+            // divstyle2: { "background-color": "#dae1e6" },
+            // divstyle3: { "background-color": "#dae1e6" },
+            // divstyle4: { "background-color": "#dae1e6" },
+            // btn1() {
+            //     this.divstyle1 = { "background-color": "#0091ff" };
+            //     this.divstyle2 = { "background-color": "#dae1e6" };
+            //     this.divstyle3 = { "background-color": "#dae1e6" };
+            //     this.divstyle4 = { "background-color": "#dae1e6" };
+            // },
+            // btn2() {
+            //     this.divstyle1 = { "background-color": "#0091ff" };
+            //     this.divstyle2 = { "background-color": "#0091ff" };
+            //     this.divstyle3 = { "background-color": "#dae1e6" };
+            //     this.divstyle4 = { "background-color": "#dae1e6" };
+            // },
+            // btn3() {
+            //     this.divstyle1 = { "background-color": "#0091ff" };
+            //     this.divstyle2 = { "background-color": "#0091ff" };
+            //     this.divstyle3 = { "background-color": "#0091ff" };
+            //     this.divstyle4 = { "background-color": "#dae1e6" };
+            // },
+            // btn4() {
+            //     this.divstyle1 = { "background-color": "#0091ff" };
+            //     this.divstyle2 = { "background-color": "#0091ff" };
+            //     this.divstyle3 = { "background-color": "#0091ff" };
+            //     this.divstyle4 = { "background-color": "#0091ff" };
+            // },
+            // boxurl: "../public/img/tab_safebox_pre@2x.png",
+            // openurl: "../public/img/tab_opendoor@2x.png",
+            // recoedurl: "../public/img/tab_alarm@2x.png",
+            // userurl: "../public/img/tab_associated@2x.png",
         })
     }
     async open() {
@@ -101,31 +101,37 @@ class Home1Controller extends Controller {
         await this.ctx.render("recoed", {
             box: "米洛保险箱",
             list: [{
+                    "url": "../public/img/move@2x.png",
                     "door": "有人移动保险箱",
                     "time": "2分钟前",
                     "address": "杭州",
                 },
                 {
+                    "url": "../public/img/electricity@2x.png",
                     "door": "保险箱点亮低于20",
                     "time": "25分钟前",
                     "address": "广东",
                 },
                 {
+                    "url": "../public/img/modify@2x.png",
                     "door": "修改配置",
                     "time": "2天前",
                     "address": "上海",
                 },
                 {
+                    "url": "../public/img/electricity@2x.png",
                     "door": "保险箱电量低于20",
                     "time": "18天前",
                     "address": "上海",
                 },
                 {
+                    "url": "../public/img/move@2x.png",
                     "door": "有人移动保险箱",
                     "time": "2分钟前",
                     "address": "杭州",
                 },
                 {
+                    "url": "../public/img/move@2x.png",
                     "door": "有人移动保险箱",
                     "time": "2分钟前",
                     "address": "杭州",
