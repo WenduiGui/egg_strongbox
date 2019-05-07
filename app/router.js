@@ -5,7 +5,8 @@
  */
 module.exports = app => {
     const { router, controller } = app;
-    router.get('/', controller.home.index);
+    router.get('/' ,controller.banner.index);
+    router.get('/Associated', controller.home.index);
     router.get('/register', controller.home.register);
     router.get('/Forget_password', controller.home.Forget_password);
     router.get('/Add_to', controller.add.index);
