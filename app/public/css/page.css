@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.home{
+  width: 100%;
+}
+.HeadHeader {
+  width: 100%;
+  height: 0.83rem;
+  background-color: black;
+}
+.list .lsitli{
+  width: 100%;
+  height: 0.84rem;
+}
+.pic{
+  width: 0.56rem;
+  height: 0.56rem;
+  float: left;
+  margin-left: 0.3rem;
+  margin-top: 0.15rem;
+}
+.src{
+  width: 0.56rem;
+  height: 0.56rem;
+  float: left;
+  color: white;
+  margin-left: 1.5rem;
+  margin-top: 0.15rem;
+}
+
+.bt11{
+  font-size: 22px;
+  color: white;
+  float: left;
+  margin-top: 0.2rem;
+  margin-left: 1.5rem;
+}
+.picc{
+  width: 100%;
+}
+.container{
+  width: 100%;
+  height: 6.4rem;
+  margin-top: -0.3rem;
+  /* border: 1px solid red; */
+}
+.pic5{
+  width: 2.4rem;
+  height: 2.47rem;
+  float: left;
+  margin-left: 2.2rem;
+  margin-top: 1.46rem;
+}
+.bt{
+  font-size: 24px;
+  float: left;
+  clear: both;
+  color: black;
+  margin-left: 2.2rem;
+  margin-top: 0.4rem;
+}
+.sj{
+  font-size: 24px;
+  float: left;
+  clear: both;
+  color: #b9b9b9;
+  margin-left: 1.7rem;
+  margin-top: 0.2rem;
+}
+.content .contentlist{
+  list-style: none;
+}
+.footer{
+  width: 100%;
+  height: 0.94rem;
+  background-color: #0092ff;
+}
+.sp5{
+  color: white;
+  font-size: 24px;
+  float: left;
+  margin-left: 2.3rem;
+  margin-top: 0.2rem;
+  text-decoration: none;
+}

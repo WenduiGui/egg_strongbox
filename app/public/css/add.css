@@ -1,50 +1,57 @@
-*{
-    margin: 0;
+* {
     padding: 0;
+    margin: 0;
 }
-.home{
+
+#big{
     width: 100%;
     height: 100%;
 }
-.AddHeader{
+.AddHeader {
     width: 100%;
-    height: 0.90rem;
+    height: 0.88rem;
     background-color: black;
 }
-.AddHeader .funt{
+.AddHeader span {
+    color: #ffffff;
     float: left;
     color: white;
     font-size: .32rem;
     margin-left: 2.5rem;
     margin-top: 0.2rem;
 }
-.footer {
+
+.AddFooter {
     width: 100%;
-    height: 80%
-  }
-  .footer .tp{
-    display: inline;
+    /* height: 100%; */
+    /* border: 1px solid red; */
+}
+
+.AddFooter .tjbxx {
+    color: #010101;
+    float: left;
+    /* margin-top: 3.8rem; */
+    margin-left: 2.3rem;
+    font-size: 0.45rem;
+}
+
+.AddFooter .tp {
     margin-top: 1.8rem;
     margin-left: 2.7rem;
 }
-.footer .tjbxx {
-    color:#010101;
-    float: left;
-    margin-left: 2.2rem;
-    font-size: 0.45rem;
-}
-.footer .sys{
+
+.AddFooter .sys {
     margin-left: 0.6rem;
     margin-top: 0.27rem;
     font-size: 0.3rem;
     float: left;
     color: #9e9e9e;
 }
-.footer .tz{
+.AddFooter .tz {
     float: left;
     font-size: 0.35rem;
     text-decoration: none;
-    margin-top: 5rem;
+    margin-top: 4.49rem;
     margin-left: 2rem;
     color: #068cff;
 }

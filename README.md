@@ -1,47 +1,68 @@
-# test
+# 渲染模板
 
+### 安装模板依赖
 
+npm install --save egg-view-nunjucks
 
-## QuickStart
+### 配置插件
 
-<!-- add docs here for user -->
+修改文件config/plugin.js
 
-see [egg docs][egg] for more detail.
-
-### Development
-
-```bash
-$ npm i
-$ npm run dev
-$ open http://localhost:7001/
+``` js
+module.exports = {
+  // had enabled by egg
+  // static: {
+  //   enable: true,
+  // }
+  nunjucks: {
+    enable: true,
+    package: 'egg-view-nunjucks',
+  }
+};
 ```
 
-### Deploy
+修改文件config/config.default.js
 
-```bash
-$ npm start
-$ npm stop
+``` js
+//添加下面的选项
+config.view = {
+defaultViewEngine: 'nunjucks'
+}
+
 ```
 
-### npm scripts
+### 创建模板目录
 
-- Use `npm run lint` to check code style.
-- Use `npm test` to run unit test.
-- Use `npm run autod` to auto detect dependencies upgrade, see [autod](https://www.npmjs.com/package/autod) for more detail.
+在app目录下创建view文件夹，并创建一个index.html文件
 
+``` html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>我是一个模板</h1>
+</body>
+</html>
+```
 
-[egg]: https://eggjs.org
+### 修改controller/home文件
 
-### 任务分配
+``` js
+const Controller = require('egg').Controller;
 
-#### 登录 注册成功 忘记密码 莫鑫源
+class HomeController extends Controller {
+  async index() {
+    const { ctx } = this;
+    await ctx.render("index.html")  //渲染view中的index.html页面
+  }
+}
 
-#### 添加保险箱 首页 我的 张天庆
+module.exports = HomeController;
+```
 
-#### 保险箱状态 详情 周宏政
-
-#### 开门记录 报警记录 刘轩瑞
-
-#### 广告页 关联记录 盘德新
-
-#### 用rem写，注意命名，带路由
+### 访问首页可以看到模板内容

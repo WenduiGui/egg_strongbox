@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/public/css/loign.css">
+    {% block style %}
+    {% endblock %}
+</head>
+
+<body>
+    {% block content %}
+    <div class="home">
+        <div class="MyHeader">
+            <div class="BoxTop">
+                <a href="/page">
+                    <img class="headerimg" src="/public/img/back.png" alt="">
+                </a>
+                <span class="headerspan">{{span}}</span>
+            </div>
+            <img class="headerimg2" src="/public/img/1.jpg" alt="">
+            <span class="headerspan1">{{spanTwo}}</span>
+        </div>
+        <div class="MyContent">
+            <ul class="MyList">
+                {% for item in MyList %}
+                <li class="MyLi">
+                    <span class="Content">{{item.num}}</span>
+                    <img class="AppContianerimg1" src="/public/img/biaoqian.jpg" alt="">
+                </li>
+                {% endfor %}
+            </ul>
+            <div class="AppContianerbox2"></div>
+            <ul class="ListTow">
+                {% for item in ListTow %}
+                <li class="AppContianerli2">
+                    <span class="AppContianerspan2">{{item.word}}</span>
+                    <img class="AppContianerimg2" src="/public/img/biaoqian.jpg" alt="">
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="AppFooterbox3"></div>
+        <div class="AppFooterbox2">
+            <a href="/">
+                <span class="AppFooterspan">{{span}}</span>
+            </a>
+        </div>
+        <div class="AppFooterbox4"></div>
+    </div>
+    {% endblock %}
+
+    {% block js %}
+    <script src="/public/js/fontsizeset.js"></script>
+    {% endblock %}
+</body>
+
+</html>

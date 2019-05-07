@@ -1,15 +1,16 @@
-const Controller = require("egg").Controller;
+'use strict';
 
-class HomeController extends Controller {
+const Controller = require('egg').Controller;
+
+class AddController extends Controller {
     async index() {
         const { ctx } = this;
-        await ctx.render('add.html',{
-            word:"添加保险箱",
+        await ctx.render("add.html", {
             tjbxx: "添加保险箱",
-            sys:"扫一扫保险箱二维码即可自动添加保险箱",
-            word1:"扫描二维码添加",
+            sys: "扫一扫保险箱二维码即可自动添加保险箱",
+            saomiao: "扫描二维码添加",
         })
     }
 }
 
-module.exports = HomeController;
+module.exports = AddController;
