@@ -6,14 +6,16 @@ class HomeController extends Controller {
             ctx
         } =this;
         await ctx.render("my.html",{
-            span:"我的",
+            span:"退出登录",
             spanTwo:"大风起兮",
-            // MyList:[
-            //     {num:"通知消息"},
-            //     {num:"修改密码"},
-            //     {word:"意见反馈"},
-            //     {word:"关于"},
-            // ],
+            MyList:[
+                {num:"通知消息"},
+                {num:"修改密码"},
+            ],
+            ListTow:[
+                {word:"意见反馈"},
+                {word:"关于"},
+            ]
         })
     }
 }

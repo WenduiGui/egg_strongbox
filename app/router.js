@@ -8,4 +8,5 @@ module.exports = app => {
   router.get('/', controller.add.index);
   router.get('/head', controller.head.index);
   router.get('/my', controller.my.index);
+  router.get('/returnhead', controller.head.index);
 };
