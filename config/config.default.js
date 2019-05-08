@@ -17,18 +17,17 @@ module.exports = appInfo => {
 
   // add your middleware config here
   config.middleware = [];
-
+  config.view = {
+    defaultViewEngine:'nunjucks'
+   }
   // add your user config here
   const userConfig = {
     // myAppName: 'egg',
   };
 
-  config.view = {
-    defaultViewEngine: 'nunjucks'
-  }
-
   return {
     ...config,
     ...userConfig,
   };
+
 };
