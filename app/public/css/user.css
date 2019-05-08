@@ -20,14 +20,14 @@
 .span {
     color: white;
     font-size: 0.3rem;
-    margin-top: 0.3rem;
+    margin-top: 0.2rem;
     margin-left: 2rem;
     float: left;
 }
 
 .img2 {
-    margin-left: 2.30rem;
-    margin-bottom: 0.38rem;
+    margin-left: 1.60rem;
+    margin-bottom: 0.4rem;
     width: 0.39rem;
     height: 0.39rem;
 }
@@ -68,7 +68,7 @@
     list-style: none;
     float: left;
     width: 95%;
-    height: 1.42rem;
+    height: 1.22rem;
     border-bottom: 0.01rem solid #e7e7e7;
     margin-left: 0.3rem;
 }
@@ -78,7 +78,7 @@
     height: 0.9rem;
     background: #9981ef;
     float: left;
-    margin-top: 0.27rem;
+    margin-top: 0.17rem;
 }
 
 .listimg1 {

@@ -106,7 +106,7 @@ class Home1Controller extends Controller {
                 },
                 {
                     "url":"../public/img/electricity@2x.png",
-                    "door": "保险箱点亮低于20",
+                    "door": "保险箱电量低于20%",
                     "time": "25分钟前",
                     "address": "广东",
                 },
@@ -118,7 +118,7 @@ class Home1Controller extends Controller {
                 },
                 {
                     "url":"../public/img/electricity@2x.png",
-                    "door": "保险箱电量低于20",
+                    "door": "保险箱电量低于20%",
                     "time": "18天前",
                     "address": "上海",
                 },
