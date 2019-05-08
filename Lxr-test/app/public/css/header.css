@@ -1,0 +1,223 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.dev{
+    height: 10.94rem;
+    width: 100%;
+
+}
+.dev .header{
+    width: 100%;
+    height: 0.88rem;
+    background-color: black;
+    float: left;
+}
+.dev .header .header-jt{
+    float: left;
+    margin-left: 0.3rem;
+    margin-top: 0.25rem;
+    width: 0.2rem;
+    height: 0.37rem;
+}
+.dev .header h2{
+    font-size: 0.32rem;
+    color: white;
+    float: left;
+    margin-left: 2rem;
+    margin-top: 0.2rem;
+}
+.dev .conterne{
+    height: 10.5rem;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    float: left;
+    /* border-bottom: 0.01rem solid black;  */
+}
+.dev .conterne .logo{
+    width: 10%;
+    height: 6%;
+    float: left;
+    margin-left: 0.35rem;
+    margin-top: 0.26rem;
+}
+.dev .conterne ul{
+    float: left;
+list-style: none;
+
+}
+.dev .conterne ul .shang{
+    text-emphasis: none;
+    font-size: 0.28rem;
+    float: left;
+    margin-top: 10%;
+    margin-left: 0.25rem;
+    color: #000000;
+}
+.dev .conterne ul .xia{ 
+    font-size: 0.25rem;
+    clear: both;
+    margin-top: 0.18rem;
+    margin-left: 0.25rem;
+    color: #9b9b9b;
+}
+.dev .conterne .chengshi{
+    margin-right: 0.4rem;
+    float: right;
+    font-size: 0.28rem;
+    color: #959595;
+    margin-top: 0.4rem;
+}
+.dev .conterne .xiahuaxian{
+    width: 90%;
+    height: 0.0001rem;
+    background-color: #e6e6e6;
+    float: left;
+    margin-top: 0.1rem;
+    margin-left: 0.3rem;
+}
+/* .dev .footer{
+    width: 7.5rem;
+    height: 1.9rem;
+    float: left;
+    /* background-color: #000000; */
+    border-top: 0.01rem solid #e6e6e6;
+}
+.dev .footer ul{
+    float: left;
+    list-style: none;
+}
+.dev .footer ul .bxx-logo{
+    float: left;    
+    margin-left: 0.5rem;
+    margin-top: 0.7rem;
+}
+.dev .footer ul .bxx-miaoshu{
+    /* float: left; */
+    margin-top: 1rem;
+    font-size: 0.28rem;
+    position: relative;
+    margin-left: 0.5rem;
+}
+.dev .footer ul .kmjl-logo{
+    margin-top:0.18rem;
+    float: left;    
+    margin-left: 0.95rem;
+    margin-top: 0.7rem;
+}
+.dev .footer ul .kmjl-miaoshu{
+    /* float: left; */
+    margin-top: 1rem;
+    font-size: 0.28rem;
+    position: relative;
+    margin-left: 0.85rem;
+}
+.dev .footer ul .bjjl-logo{
+    float: left;    
+    margin-left: 1rem;
+    margin-top: 0.7rem;
+}
+.dev .footer ul .bjjl-miaoshu{
+    /* float: left; */
+    margin-top: 1rem;
+    font-size: 0.28rem;
+    position: relative;
+    margin-left: 0.84rem;
+}
+.dev .footer ul .glyh-logo{
+    float: left;    
+    margin-left: 1rem;
+    margin-top: 0.7rem;
+}
+.dev .footer ul .glyh-miaoshu{
+    /* float: left; */
+    margin-top: 1rem;
+    font-size: 0.28rem;
+    position: relative;
+    margin-left: 0.84rem;
+}
+
+.footer{
+    width: 100%;
+    height: 1.35rem;
+    border-top: 1px solid #c9c9c9;
+    position: absolute;
+    top: 9.99rem;
+    }
+    .bxx{
+    width: 20%;
+    height: 1.35rem;
+    float: left;
+    }
+    .pic1{
+    width: 0.5rem;
+    height: 0.5rem;
+    float: left;
+    margin-left: 0.62rem;
+    margin-top: 0.3rem;
+    }
+    .scr1{
+    font-size: 0.02rem;
+    float: left;
+    margin-left: 0.6rem;
+    margin-top: 0.1rem;
+    color: #7f7f7f;
+    }
+    .kmjl{
+    width: 24%;
+    height: 1.35rem;
+    float: left;
+    }
+    .pic2{
+    width: 0.5rem;
+    height: 0.5rem;
+    float: left;
+    margin-left: 0.7rem;
+    margin-top: 0.3rem;
+    }
+    .scr2{
+    font-size: 0.02rem;
+    float: left;
+    margin-left: 0.6rem;
+    margin-top: 0.1rem;
+    color: #7f7f7f;
+    }
+    .bjjl{
+    width: 24%;
+    height: 1.35rem;
+    float: left;
+    }
+    .pic3{
+    width: 0.5rem;
+    height: 0.5rem;
+    float: left;
+    margin-left: 0.7rem;
+    margin-top: 0.3rem;
+    }
+    .scr3{
+    font-size: 0.02rem;
+    float: left;
+    margin-left: 0.6rem;
+    margin-top: 0.1rem;
+    color: #0090ff;
+
+    }
+    .glyh{
+    width: 24%;
+    height: 1.35rem;
+    float: left;
+    }
+    .pic4{
+    width: 0.5rem;
+    height: 0.5rem;
+    float: left;
+    margin-left: 0.7rem;
+    margin-top: 0.3rem;
+    }
+    .scr4{
+    font-size: 0.02rem;
+    float: left;
+    margin-left: 0.6rem;
+    margin-top: 0.1rem;
+    color: #7f7f7f;
+    }
