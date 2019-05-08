@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>add</title>
+    <title>Document</title>
     <link rel="stylesheet" href="/public/css/add.css">
     {% block style %}
     {% endblock %}
@@ -13,16 +13,15 @@
 
 <body>
     {% block content %}
-    <div id="big">
-        <div class="AddHeader">
+    <div class="box">
+        <div class="header">
             <span>添加保险箱</span>
         </div>
-        <div class="AddFooter">
-            <img class="tp" src="../public/img/切图/启动图标/hdpi/applogo.png" alt="11">
+        <div class="footer">
+            <img class="tp" src="/public/images/applogo.png" alt="11">
             <span class="tjbxx">{{tjbxx}}</span>
             <span class="sys">{{sys}}</span>
-            <a class="tz" href="/page">{{saomiao}}</a>
-
+            <a href="/homepage"><span class="tz">{{word}}</span></a>
         </div>
     </div>
     {% endblock %}

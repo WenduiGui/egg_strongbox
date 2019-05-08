@@ -2,50 +2,62 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="../public/css/details.css">
-    <script src="../public/js/fontsizeset.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="/public/css/details.css">
+  {% block style %}
+  {% endblock %}
 </head>
 
 <body>
-    <div class="Header">
-        <a href="/box">
-            <img src="../public/img/back.png" alt>
-        </a>
-        <p>{{box}}</p>
+  {% block content %}
+  <div class="box">
+    <div id="header">
+      <a href="/state"><img class="tz" src="/public/images/back@2x.png" alt=""></a>
+      <h1 class="bxx">{{bxx}}</h1>
     </div>
-    <div class="Detabody">
-        <div class="body_top">
-            <div class="top">
-                <p class="boxname">保险箱名称<span class="miko">MIKO保险箱</span></p>
-                <img src="../public/img/back-2.png" alt="">
-            </div>
-            <div class="bottom">
-                <p class="brand">品牌<span class="sanxing">三星</span></p>
-            </div>
-        </div>
-        <div class="body_bottom">
-            <div class="number">
-                <p class="serial">{{serial}}</p>
-                <h5 class="serial_number">{{number}}</h5>
-            </div>
-            <div class="Ip">
-                <p class="equipment_Ip">{{Ip}}</p>
-                <h5 class="Ip_number">{{Ip_number}}</h5>
-            </div>
-            <div class="firmware">
-                <p class="Firmware_version">{{Firmware_version}}</p>
-                <h5 class="Edition">{{Edition}}</h5>
-            </div>
-            <div class="Connect">
-                <p class="state">{{state}}</p>
-                <h5 class="true">{{Yes}}</h5>
-            </div>
-        </div>
+    <div class="list">
+      <ul class="listul">
+        <li class="listli1">
+          <span class="listspan1">{{span1}}</span>
+          <span class="listspan2">{{span2}}</span>
+          <img class="listimg" src="/public/images/back-2.png" alt="">
+        </li>
+        <li class="listli2">
+          <span class="listspan3">{{span3}}</span>
+          <span class="listspan4">{{span4}}</span>
+        </li>
+      </ul>
     </div>
+    <div class="content">
+        <ul class="contentul">
+            <li class="contentli1">
+                <span class="contentspan1">{{span11}}</span>
+                <span class="contentspan2">{{span22}}</span>
+            </li>
+            <li class="contentli2">
+                <span class="contentspan3">{{span33}}</span>
+                <span class="contentspan4">{{span44}}</span>
+            </li>
+            <li class="contentli3">
+                <span class="contentspan5">{{span55}}</span>
+                <span class="contentspan6">{{span66}}</span>
+            </li>
+            <li class="contentli4">
+                <span class="contentspan7">{{span77}}</span>
+                <span class="contentspan8">{{span88}}</span>
+            </li>
+        </ul>
+    </div>
+  </div>
+
+  {% endblock %}
+
+  {% block js %}
+  <script src="/public/js/fontsizeset.js"></script>
+  {% endblock %}
 </body>
 
 </html>

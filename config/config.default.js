@@ -13,19 +13,17 @@ module.exports = appInfo => {
   const config = {};
 
   // use for cookie sign key, should change to your own and keep security
-  config.keys = appInfo.name + '_1555466639828_8861';
+  config.keys = appInfo.name + '_1555894143786_7680';
 
   // add your middleware config here
   config.middleware = [];
-
+  config.view = {
+    defaultViewEngine:'nunjucks'
+   }
   // add your user config here
   const userConfig = {
     // myAppName: 'egg',
   };
-
-  config.view = {
-    defaultViewEngine: 'nunjucks'
-  }
 
   return {
     ...config,

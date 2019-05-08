@@ -1,5 +1,5 @@
 {
-  "name": "test",
+  "name": "Egg",
   "version": "1.0.0",
   "description": "",
   "private": true,
@@ -9,7 +9,9 @@
   "dependencies": {
     "egg": "^2.15.1",
     "egg-scripts": "^2.11.0",
-    "egg-view-nunjucks": "^2.2.0"
+    "egg-view": "^2.1.2",
+    "egg-view-nunjucks": "^2.2.0",
+    "nunjucks": "^3.2.0"
   },
   "devDependencies": {
     "autod": "^3.0.1",
@@ -25,8 +27,8 @@
     "node": ">=8.9.0"
   },
   "scripts": {
-    "start": "egg-scripts start --daemon --title=egg-server-test",
-    "stop": "egg-scripts stop --title=egg-server-test",
+    "start": "egg-scripts start --daemon --title=egg-server-Egg",
+    "stop": "egg-scripts stop --title=egg-server-Egg",
     "dev": "egg-bin dev",
     "debug": "egg-bin debug",
     "test": "npm run lint -- --fix && npm run test-local",
