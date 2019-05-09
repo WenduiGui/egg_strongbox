@@ -1,0 +1,33 @@
+{% extends "luyou.html" %} {% block content %}
+<link rel="stylesheet" href="../public/css/open.css">
+<div class="Openh">
+    <img src="../public/image/back.png" alt>
+    <p>{{box}}</p>
+</div>
+<div class="Openb">
+    <div class="Opendoor">
+        <ul>
+            {% for item in list %}
+            <li>
+                <img src="../public/image/Open.jpg" alt>
+                <span class="door">
+                    {{item.door}}
+                    <br>
+                    <span class="time">{{item.time}}</span>
+                </span>
+                <span class="address">{{item.address}}</span>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+
+<!-- <ul>
+        {% for item in students %}
+        <li>{{item}}</li>
+        {% endfor %}
+    </ul> -->
+{% endblock %} {% block js %}
+<script src="../public/js/fontsizeset.js"></script>
+<!-- <script src="/public/js/index.js"></script> -->
+{% endblock %}
