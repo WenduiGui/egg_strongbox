@@ -25,34 +25,6 @@ class Home1Controller extends Controller {
             "url2":"../public/img/tab_opendoor@2x.png",
             "url3":"../public/img/tab_alarm@2x.png",
             "url4":"../public/img/tab_associated@2x.png",
-            // divstyle1: { "background-color": "#dae1e6" },
-            // divstyle2: { "background-color": "#dae1e6" },
-            // divstyle3: { "background-color": "#dae1e6" },
-            // divstyle4: { "background-color": "#dae1e6" },
-            // btn1() {
-            //     this.divstyle1 = { "background-color": "#0091ff" };
-            //     this.divstyle2 = { "background-color": "#dae1e6" };
-            //     this.divstyle3 = { "background-color": "#dae1e6" };
-            //     this.divstyle4 = { "background-color": "#dae1e6" };
-            // },
-            // btn2() {
-            //     this.divstyle1 = { "background-color": "#0091ff" };
-            //     this.divstyle2 = { "background-color": "#0091ff" };
-            //     this.divstyle3 = { "background-color": "#dae1e6" };
-            //     this.divstyle4 = { "background-color": "#dae1e6" };
-            // },
-            // btn3() {
-            //     this.divstyle1 = { "background-color": "#0091ff" };
-            //     this.divstyle2 = { "background-color": "#0091ff" };
-            //     this.divstyle3 = { "background-color": "#0091ff" };
-            //     this.divstyle4 = { "background-color": "#dae1e6" };
-            // },
-            // btn4() {
-            //     this.divstyle1 = { "background-color": "#0091ff" };
-            //     this.divstyle2 = { "background-color": "#0091ff" };
-            //     this.divstyle3 = { "background-color": "#0091ff" };
-            //     this.divstyle4 = { "background-color": "#0091ff" };
-            // }
         })
     }
     async open() {
@@ -158,6 +130,16 @@ class Home1Controller extends Controller {
             "url4":"../public/img/tab_associated_pre.png",
             // teachers: ["张三", "李四", "王五"]
         })
+    }
+    async Verification() {
+        const username = this.ctx.request.body.username;
+        const password = this.ctx.request.body.password;
+        if(username == '123456'  && password === '123456' ){
+            await this.ctx.redirect('/Add_to')
+        }else{
+            // alert('登录失败')
+            await this.ctx.redirect('/')
+        }
     }
 }
 

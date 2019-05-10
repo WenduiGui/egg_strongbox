@@ -1,0 +1,24 @@
+$('.one').click(function(){
+    $('.one').css("background-color","#0091fe")
+    $('.two').css("background-color","#d9e0e6")
+    $('.three').css("background-color","#d9e0e6")
+    $('.four').css("background-color","#d9e0e6")
+})
+$('.two').click(function(){
+    $('.one').css("background-color","#d9e0e6")
+    $('.two').css("background-color","#0091fe")
+    $('.three').css("background-color","#d9e0e6")
+    $('.four').css("background-color","#d9e0e6")
+})
+$('.three').click(function(){
+    $('.one').css("background-color","#d9e0e6")
+    $('.two').css("background-color","#d9e0e6")
+    $('.three').css("background-color","#0091fe")
+    $('.four').css("background-color","#d9e0e6")
+})
+$('.four').click(function(){
+    $('.one').css("background-color","#d9e0e6")
+    $('.two').css("background-color","#d9e0e6")
+    $('.three').css("background-color","#d9e0e6")
+    $('.four').css("background-color","#0091fe")
+})

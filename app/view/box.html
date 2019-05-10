@@ -26,12 +26,10 @@
             <p class="introduce">{{introduce}}</p>
         </div>
         <div class="level">
-
-            <button class="btn one" :style="[divstyle1]" @click="btn1"></button>
-            <button class="btn two" :style="[divstyle2]" @click="btn2"></button>
-            <button class="btn three" :style="[divstyle3]" @click="btn3"></button>
-            <button class="btn four" :style="[divstyle4]" @click="btn4"></button>
-
+            <button class="btn one"></button>
+            <button class="btn two"></button>
+            <button class="btn three"></button>
+            <button class="btn four"></button>
         </div>
         <div class="series">
             <ul>
@@ -47,7 +45,6 @@
 
 {% endblock %} {% block js %}
 <script src="../public/js/fontsizeset.js"></script>
-<script>
-    // alert("写在block中的js")
-</script>
+<script src="/public/js/jquery.js"></script>
+<script src="/public/js/box.js"></script>
 {% endblock %}

@@ -8,33 +8,37 @@
     <title>login</title>
     <link rel="stylesheet" href="../public/css/home.css">
     <script src="../public/js/fontsizeset.js"></script>
+    {% block style %}
+    {% endblock %}
 </head>
 
 <body>
+    {% block content %}
     <div id="big">
         <div id="Header">
             <img src="./../public/img/applogo.png" alt="">
         </div>
         <div id="Body">
-            <div class="Name">
+            <form class="Name" action="/Verification" method="POST">
                 <label class="name">{{name}}</label>
-                <input type="text" placeholder="请输入用户名" class="User_name">
-            </div>
-            <div class="Pass">
-                <label class="pass">{{pass}}</label>
-                <input type="password" placeholder="请输入密码" class="Input_password">
-            </div>
+                <input type="text" placeholder="请输入用户名" maxlength="8" class="User_name" name="username">
+                <div class="Pass">
+                    <br>
+                    <label class="pass">{{pass}}</label>
+                    <input type="password" placeholder="请输入密码" maxlength="12" class="Input_password" name="password">
+                </div>
+                <input type="submit" value="登录" class="Register">
+            </form>
         </div>
         <div id="Footer">
-            <a href="/Add_to">
-                <button class="Register">登录</button>
-            </a>
             <div class="zhuce">
                 <a href='/register' class="register">{{register}}</a>
                 <a href='/Forget_password' class="Forget_password">{{Forget_password}}</a>
             </div>
         </div>
     </div>
+    {% endblock %}
+
 </body>
 
 </html>

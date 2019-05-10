@@ -47,35 +47,33 @@
     width: 71%;
     height: 100%;
 }
-#Body .Pass {
+#Body .Name .Pass {
+    clear: both;
+    float: left;
     width: 100%;
     height: 0.99rem;
     border-bottom: 1px solid #e4e4e6;
     box-sizing: border-box;
 }
 
-#Body .Pass .pass {
+#Body .Name .Pass .pass {
     font-size: 0.3rem;
     float: left;
     line-height: 1rem;
     margin-left: 0.44rem;
+    margin-top: -1.3rem;
 }
 
-#Body .Pass .Input_password {
+#Body .Name .Pass .Input_password {
     font-size: 0.27rem;
     float: left;
-    margin-left: 0.77rem;
+    margin-left: 1.77rem;
     border: 0px;
     width: 71%;
     height: 100%;
+    margin-top: -1.3rem;
 }
-
-#Footer {
-    width: 100%;
-    /* height: 7.13rem; */
-}
-
-#Footer .Register {
+.Register {
     width: 92%;
     height: 0.88rem;
     background-color: #0091fe;
@@ -87,6 +85,10 @@
     line-height: 0.88rem;
     text-align: center;
     border: 0;
+}
+#Footer {
+    width: 100%;
+    /* height: 7.13rem; */
 }
 
 #Footer .zhuce {
@@ -102,6 +104,7 @@
     line-height: 1rem;
     margin-left: 0.26rem;
     color: #7c7c7e;
+    margin-top: 1.4rem;
 }
 
 #Footer .zhuce .Forget_password {
@@ -111,5 +114,6 @@
     color: black;
     line-height: 1rem;
     margin-left: 3.5rem;
+    margin-top: 1.4rem;
     color: #7c7c7e;
 }
