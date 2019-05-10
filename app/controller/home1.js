@@ -138,7 +138,7 @@ class Home1Controller extends Controller {
             await this.ctx.redirect('/Add_to')
         }else{
             // alert('登录失败')
-            await this.ctx.redirect('/')
+            await this.ctx.render('index')
         }
     }
 }
