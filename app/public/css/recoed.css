@@ -21,62 +21,61 @@
 
 .Recoedh p {
     float: left;
-    font-size: 0.30rem;
+    font-size: 0.34rem;
     color: #ffffff;
     line-height: 0.88rem;
-    margin-left: 2.1rem;
+    margin-left: 2rem;
 }
 
 .Recoedb {
     width: 100%;
-    /* height: 11.08rem; */
     border-bottom: 1px solid #e7e7e7;
     box-sizing: border-box;
 }
 
 .Recoedb .Opendoor {
     width: 100%;
-    height: 9.47rem;
+    height: 9.4rem;
     box-sizing: border-box;
     margin: 0 auto;
 }
 
 .Recoedb .Opendoor img {
-    width: 0.9rem;
-    height: 0.9rem;
+    width: 0.6rem;
+    height: 0.6rem;
     float: left;
-    margin-top: 0.15rem;
-    margin-left: 0.3rem;
+    margin-top: 0.25rem;
+    margin-left: 0.2rem;
 }
 
 .Recoedb .Opendoor li {
     width: 100%;
-    height: 1.22rem;
+    height: 1.2rem;
     border-bottom: 1px solid #e8e8e8;
     box-sizing: border-box;
     list-style: none;
 }
 
 .Recoedb .Opendoor .door {
-    font-size: 0.3rem;
+    font-size: 0.24rem;
     float: left;
-    margin-top: 0.24rem;
+    margin-top: 0.25rem;
     margin-left: 0.24rem;
 }
 
 .Recoedb .Opendoor .door .time {
     color: #9c9c9c;
-    font-size: 0.24rem;
+    font-size: 0.2rem;
 }
 
 .Recoedb .Opendoor .address {
     color: #9d9d9d;
-    font-size: 0.3rem;
+    font-size: 0.24rem;
     margin-right: 0.3rem;
     float: right;
-    /* line-height: 1.42rem; */
-    margin-top: 0.4rem;
+    line-height: 1.2rem;
 }
-.s3{
-    color: #0091fe;
+
+.menu li a .s3 {
+    color: #0090ff;
 }

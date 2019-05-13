@@ -20,14 +20,14 @@
 .span {
     color: white;
     font-size: 0.3rem;
-    margin-top: 0.2rem;
+    margin-top: 0.3rem;
     margin-left: 2rem;
     float: left;
 }
 
 .img2 {
-    margin-left: 1.60rem;
-    margin-bottom: 0.4rem;
+    margin-left: 1.8rem;
+    margin-bottom: 0.38rem;
     width: 0.39rem;
     height: 0.39rem;
 }
@@ -55,46 +55,47 @@
 
 .listdiv1 {
     width: 100%;
-    height: 8.52rem;
+    height: 8.54rem;
 }
 
 .listul1 {
-    width: 100%;
     float: left;
+    width: 100%;
     padding-left: 0rem;
 }
 
 .listli1 {
     list-style: none;
     float: left;
-    width: 95%;
-    height: 1.22rem;
+    width: 92%;
+    height: 1.2rem;
     border-bottom: 0.01rem solid #e7e7e7;
     margin-left: 0.3rem;
 }
 
 .list1 {
-    width: 0.9rem;
-    height: 0.9rem;
+    width: 0.6rem;
+    height: 0.6rem;
     background: #9981ef;
     float: left;
-    margin-top: 0.17rem;
+    margin-top: 0.27rem;
 }
 
 .listimg1 {
     width: 0.49rem;
     height: 0.44rem;
     float: left;
-    margin-left: 0.18rem;
-    margin-top: 0.19rem;
+    margin-left: 0.05rem;
+    margin-top: 0.08rem;
 }
 
 .listspan1 {
     font-size: 0.25rem;
-    margin-left: 1.16rem;
+    margin-left: 0.76rem;
     margin-top: -0.35rem;
     float: left;
 }
-.s4{
-    color: #0091fe;
+
+.menu li a .s4 {
+    color: #0090ff;
 }

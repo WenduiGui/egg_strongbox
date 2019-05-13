@@ -12,7 +12,7 @@
 
 <body>
     <div id="RegHeader">
-        <a href="/Associated">
+        <a href="/home">
             <img src="./../public/img/back.png" alt class="Regimg">
         </a>
         <span class="Regzhuce">{{word}}</span>
@@ -20,38 +20,83 @@
     <div id="RegBody">
         <div class="Tell">
             <label for class="Phone">
-                <strong>{{tell}}</strong>
+                {{tell}}
             </label>
             <form action>
                 <input type="number" placeholder="请输入手机号" class="Num">
+                <span class="mm">{{mm}}</span>
             </form>
         </div>
         <div class="Captcha">
             <label for class="Yzm">
-                <strong>{{Yzm}}</strong>
+                {{Yzm}}
             </label>
-            <input type="text" placeholder="请输入验证码" class="inputYzm">
-
-            <!-- <input v-if="!hasbtn" type="text" value="秒">
-          <input @click="content" type="button" value="获取验证码" class="btn">-->
-
-            <button class="btn" @click="countDown" :class="{disabled: !this.canClick}">{{content}}</button>
+            <input type="text" placeholder="请输入验证码" class="inputYzm" maxlength=6>
+            <input type="button" id="btn" value="获取验证码" onclick="sendemail()" />
         </div>
         <div class="Password">
             <label for class="Cipher">
-                <strong>{{Cipher}}</strong>
+                {{Cipher}}
             </label>
             <form>
                 <input type="password" placeholder="请输入新密码" class="newCipher">
             </form>
         </div>
-        <a href="/Associated">
+        <a href="/home">
             <div class="Register" @click="git">{{zhuce}}</div>
         </a>
         <div class="Ystk">
             <p class="tongyi">{{tongyi}}<span class="yinsi">{{yinsi}}</span></p>
         </div>
     </div>
+    <script src="../public/js/jquery.js"></script>
+    <script>
+        $("input").focus(function() {
+            $(this).css("background-color", "#cccccc");
+        });
+
+        $("input").blur(function() {
+            $(this).css("background-color", "#ffffff");
+        });
+
+        let reg = /^[1][3,4,5,7,8][0-9]{9}$/;
+        $(".Num").blur(function() {
+            var password = $(".Num").val();
+            if (reg.test(password)) {
+                $(".mm").text("");
+            } else {
+                $(".mm").text("请输入正确的手机号");
+            }
+        })
+
+        var countdown = 3;
+
+        function sendemail() {
+            var obj = $("#btn");
+            settime(obj);
+
+        }
+
+        function settime(obj) { //发送验证码倒计时
+            if (countdown == 0) {
+                obj.attr('disabled', false);
+                //obj.removeattr("disabled"); 
+                obj.val("获取验证码");
+                countdown = 3;
+                return;
+            } else {
+                obj.attr('disabled', true);
+                obj.val("重新发送(" + countdown + ")");
+                countdown--;
+            }
+            setTimeout(function() {
+                settime(obj)
+            }, 1000)
+        }
+        $('.Register').click(function() {
+            alert("注册成功")
+        })
+    </script>
 </body>
 
 </html>

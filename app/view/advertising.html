@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <meta http-equiv="refresh" content="3;URL=/home"> -->
+    <title>广告业</title>
+    <link rel="stylesheet" href="../public/css/advertising.css">
+    <script src="../public/js/fontsizeset.js"></script>
+</head>
+
+<body>
+    <div class="adv">
+        <img src="{{url}}" alt="">
+        <div class="time">
+            <a href="/home">{{tiaozhuan}}</a>
+            <span>|</span>
+            <label for="">{{num}}</label>
+        </div>
+    </div>
+    <script>
+        var num = document.querySelector("label");
+        setInterval(function() {
+            var s = 3;
+            var s = Number(num.innerHTML);
+            s--;
+            if (s >= 0) {
+                num.innerHTML = s;
+                if (s === 1) {
+                    location.href = "http://127.0.0.1:7001/home";
+                }
+                //location.href可以实现页面跳转
+            };
+        }, 1000)
+    </script>
+</body>
+
+</html>

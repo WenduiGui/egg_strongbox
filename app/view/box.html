@@ -1,13 +1,12 @@
 {% extends "layout.html" %} {% block content %}
 <link rel="stylesheet" href="../public/css/box.css">
-
 <div class="BoxH">
     <a href="/page">
-        <img class="pic1" src="../public/img/back.png" alt>
+        <img src="../public/img/back.png" alt>
     </a>
     <p>{{box}}</p>
     <a href="/details">
-        <img class="pic" src="/public/img/more@2x.png" alt="">
+        <span>···</span>
     </a>
 </div>
 <div class="body">
@@ -26,10 +25,12 @@
             <p class="introduce">{{introduce}}</p>
         </div>
         <div class="level">
-            <button class="btn one"></button>
-            <button class="btn two"></button>
-            <button class="btn three"></button>
-            <button class="btn four"></button>
+            <ul>
+                <li class="b1"></li>
+                <li class="b2"></li>
+                <li class="b3"></li>
+                <li class="b4"></li>
+            </ul>
         </div>
         <div class="series">
             <ul>
@@ -45,6 +46,32 @@
 
 {% endblock %} {% block js %}
 <script src="../public/js/fontsizeset.js"></script>
-<script src="/public/js/jquery.js"></script>
-<script src="/public/js/box.js"></script>
+<script src="../public/js/jquery.js"></script>
+<script>
+    $(".b1").click(function() {
+        $(".b1").css("background-color", "#0091fe");
+        $(".b2").css("background-color", "#d9e0e6");
+        $(".b3").css("background-color", "#d9e0e6");
+        $(".b4").css("background-color", "#d9e0e6");
+    });
+    $(".b2").click(function() {
+        $(".b1").css("background-color", "#0091fe");
+        $(".b2").css("background-color", "#0091fe");
+        $(".b3").css("background-color", "#d9e0e6");
+        $(".b4").css("background-color", "#d9e0e6");
+    });
+    $(".b3").click(function() {
+        $(".b1").css("background-color", "#0091fe");
+        $(".b2").css("background-color", "#0091fe");
+        $(".b3").css("background-color", "#0091fe");
+        $(".b4").css("background-color", "#d9e0e6");
+    });
+    $(".b4").click(function() {
+        $(".b1").css("background-color", "#0091fe");
+        $(".b2").css("background-color", "#0091fe");
+        $(".b3").css("background-color", "#0091fe");
+        $(".b4").css("background-color", "#0091fe");
+    });
+    // alert("写在block中的js")
+</script>
 {% endblock %}

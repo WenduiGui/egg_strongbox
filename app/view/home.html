@@ -8,37 +8,77 @@
     <title>login</title>
     <link rel="stylesheet" href="../public/css/home.css">
     <script src="../public/js/fontsizeset.js"></script>
-    {% block style %}
-    {% endblock %}
+    <script src="../public/js/jquery.js"></script>
 </head>
 
 <body>
-    {% block content %}
     <div id="big">
         <div id="Header">
-            <img src="./../public/img/applogo.png" alt="">
+            <img src="./../public/img/tab_safebox_pre@3x.png" alt="">
         </div>
         <div id="Body">
-            <form class="Name" action="/Verification" method="POST">
+            <div class="Name">
                 <label class="name">{{name}}</label>
-                <input type="text" placeholder="请输入用户名" maxlength="8" class="User_name" name="username">
-                <div class="Pass">
-                    <br>
-                    <label class="pass">{{pass}}</label>
-                    <input type="password" placeholder="请输入密码" maxlength="12" class="Input_password" name="password">
-                </div>
-                <input type="submit" value="登录" class="Register">
-            </form>
+                <input type="text" placeholder="请输入用户名" class="User_name" name="User_name" maxlength="12">
+                <span class="mm">{{mm}}</span>
+            </div>
+            <div class="Pass">
+                <label class="pass">{{pass}}</label>
+                <input type="password" placeholder="请输入密码" class="Input_password" name="Input_password">
+                <span class="en">{{en}}</span>
+            </div>
         </div>
         <div id="Footer">
+            <a href="/Add_to">
+                <button class="Register">登陆</button>
+            </a>
             <div class="zhuce">
                 <a href='/register' class="register">{{register}}</a>
                 <a href='/Forget_password' class="Forget_password">{{Forget_password}}</a>
             </div>
         </div>
     </div>
-    {% endblock %}
+    <script>
+        $("input").focus(function() {
+            $(this).css("background-color", "#cccccc");
+        });
 
+        $("input").blur(function() {
+            $(this).css("background-color", "#ffffff");
+        });
+
+        let reg = /^[1][3,4,5,7,8][0-9]{9}$/;
+        $(".User_name").blur(function() {
+            var username = $(".User_name").val();
+            if (reg.test(username)) {
+                $(".mm").hide();
+                $(".mm").text("");
+            } else {
+                $(".mm").show();
+                $(".mm").text("请输入正确的手机号");
+            }
+        })
+
+
+
+        let pass = /^(\w){6,12}$/;
+        $(".Input_password").blur(function() {
+            var password = $(".Input_password").val();
+            if (pass.test(password)) {
+                $(".en").hide();
+                $(".en").css('display', 'inline')
+            } else {
+                $(".en").show();
+                $(".en").css('display', 'block')
+            }
+        })
+
+
+        $('.Register').click(
+            function() {
+                alert('登陆成功')
+            })
+    </script>
 </body>
 
 </html>

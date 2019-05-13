@@ -21,10 +21,10 @@ class Home1Controller extends Controller {
                 "三级",
                 "四级",
             ],
-            "url":"../public/img/tab_safebox_pre@2x.png",
-            "url2":"../public/img/tab_opendoor@2x.png",
-            "url3":"../public/img/tab_alarm@2x.png",
-            "url4":"../public/img/tab_associated@2x.png",
+            boxurl: "../public/img/tab_safebox_pre@2x.png",
+            openurl: "../public/img/tab_opendoor@2x.png",
+            recoedurl: "../public/img/tab_alarm@2x.png",
+            userurl: "../public/img/tab_associated@2x.png",
         })
     }
     async open() {
@@ -61,56 +61,57 @@ class Home1Controller extends Controller {
                     "address": "杭州",
                 },
             ],
-            "url":"../public/img/tab_safebox.png",
-            "url2":"../public/img/tab_opendoor_pre@2x.png",
-            "url3":"../public/img/tab_alarm@2x.png",
-            "url4":"../public/img/tab_associated@2x.png",
+            boxurl: "../public/img/tab_safebox@2x.png",
+            openurl: "../public/img/tab_opendoor_pre@2x.png",
+            recoedurl: "../public/img/tab_alarm@2x.png",
+            userurl: "../public/img/tab_associated@2x.png",
+            // students: ["小明", "小红", "小亮"]
         })
     }
     async recoed() {
         await this.ctx.render("recoed", {
             box: "米洛保险箱",
             list: [{
-                    "url":"../public/img/move@2x.png",
+                    "url": "../public/img/move@2x.png",
                     "door": "有人移动保险箱",
                     "time": "2分钟前",
                     "address": "杭州",
                 },
                 {
-                    "url":"../public/img/electricity@2x.png",
-                    "door": "保险箱电量低于20%",
+                    "url": "../public/img/electricity@2x.png",
+                    "door": "保险箱点亮低于20",
                     "time": "25分钟前",
                     "address": "广东",
                 },
                 {
-                    "url":"../public/img/modify@2x.png",
+                    "url": "../public/img/modify@2x.png",
                     "door": "修改配置",
                     "time": "2天前",
                     "address": "上海",
                 },
                 {
-                    "url":"../public/img/electricity@2x.png",
-                    "door": "保险箱电量低于20%",
+                    "url": "../public/img/electricity@2x.png",
+                    "door": "保险箱电量低于20",
                     "time": "18天前",
                     "address": "上海",
                 },
                 {
-                    "url":"../public/img/move@2x.png",
+                    "url": "../public/img/move@2x.png",
                     "door": "有人移动保险箱",
                     "time": "2分钟前",
                     "address": "杭州",
                 },
                 {
-                    "url":"../public/img/move@2x.png",
+                    "url": "../public/img/move@2x.png",
                     "door": "有人移动保险箱",
                     "time": "2分钟前",
                     "address": "杭州",
                 },
             ],
-            "url":"../public/img/tab_safebox.png",
-            "url2":"../public/img/tab_opendoor@2x.png",
-            "url3":"../public/img/tab_alarm_pre@2x.png",
-            "url4":"../public/img/tab_associated@2x.png",
+            boxurl: "../public/img/tab_safebox@2x.png",
+            openurl: "../public/img/tab_opendoor@2x.png",
+            recoedurl: "../public/img/tab_alarm_pre@2x.png",
+            userurl: "../public/img/tab_associated@2x.png",
             // teachers: ["张三", "李四", "王五"]
         })
     }
@@ -124,22 +125,12 @@ class Home1Controller extends Controller {
                 "13149869441",
                 "13149869442",
             ],
-            "url":"../public/img/tab_safebox.png",
-            "url2":"../public/img/tab_opendoor@2x.png",
-            "url3":"../public/img/tab_alarm@2x.png",
-            "url4":"../public/img/tab_associated_pre.png",
+            boxurl: "../public/img/tab_safebox@2x.png",
+            openurl: "../public/img/tab_opendoor@2x.png",
+            recoedurl: "../public/img/tab_alarm@2x.png",
+            userurl: "../public/img/tab_associated_pre@2x.png",
             // teachers: ["张三", "李四", "王五"]
         })
-    }
-    async Verification() {
-        const username = this.ctx.request.body.username;
-        const password = this.ctx.request.body.password;
-        if(username == '123456'  && password === '123456' ){
-            await this.ctx.redirect('/Add_to')
-        }else{
-            // alert('登录失败')
-            await this.ctx.render('index')
-        }
     }
 }
 

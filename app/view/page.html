@@ -5,52 +5,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="stylesheet" href="/public/css/page.css">
-  {% block style %}
-  {% endblock %}
+  <title>只能保险箱</title>
+  <link rel="stylesheet" href="../public/css/page.css">
+  <script src="../public/js/fontsizeset.js"></script>
 </head>
 
 <body>
-  {% block content %}
-  <div class="home">
-    <div class="HeadHeader">
-      <ul class="list">
-        {% for item in HeadList %}
-        <li class="lsitli">
+  <div id="Page">
+    <div class="header">
+      <ul>
+        <li v-for="item in header">
           <a href="/loign">
-            <img class="pic" src="/public/img/tab_associated@2x.png" alt="">
+            <img class="pic" src="../public/img/tab_associated@2x.png" alt>
           </a>
-          <span class="bt11">{{item.bt1}}</span>
+          {{item.name}}
+          <span class="bt1">{{item.bt1}}</span>
           <a href="/Add_to">
-            <img class="src" src="/public/img/add@2x.png" alt="">
+            <img class="src" src="../public/img/add@2x.png" alt>
           </a>
         </li>
-        {% endfor %}
       </ul>
     </div>
-    <img class="picc" src="/public/img/guanggao@2x.png" alt="">
-    <div class="container">
-      <ul class="content">
-        {% for item in ContentnList %}
-        <li class="contentlist">
-          <img class="pic5" src="/public/img/safebox_icon@2x.png" alt="">
-          {{item.name}}
-          <span class="bt">{{item.bt}}</span>
-          <span class="sj">{{item.sj}}</span>
+    <div class="banner">
+      <ul>
+        <li v-for="item in banner">
+          <img src="../public/img/切图/ios/guanggao@2x.png" alt="" class="i1">
         </li>
-        {% endfor %}
+      </ul>
+    </div>
+    <div class="container">
+      <ul>
+        <li>
+          <img class="pic5" src="../public/img/safebox_icon@2x.png" alt="">
+          {{name}}
+          <span class="bt">{{bt}}</span>
+          <span class="sj">{{sj}}</span>
+        </li>
       </ul>
     </div>
     <div class="footer">
-      <a class="sp5" href="/box">{{sp5}}</a>
+      <a href="/box">
+        <span class="sp5">{{sp5}}</span>
+      </a>
     </div>
-    {% endblock %}
   </div>
-
-  {% block js %}
-  <script src="../public/js/fontsizeset.js"></script>
-  {% endblock %}
 </body>
 
 </html>
