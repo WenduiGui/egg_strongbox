@@ -6,44 +6,126 @@
 
 {% block content %}
 <div class="box">
-        <a href="/homepage"><img class="img1" src="/public/images/back.png" alt=""></a>
-        <span class="span">{{span}}</span>
-        <img class="img2" src="/public/images/add.png" alt="">
-    </div>
-    <div class="box1">
-            <span class="span1">{{span1}}</span>
-            <img class="img3" src="/public/images/addx.png" alt="">
-          </div>
-          <div class="listdiv1">
-                <ul class="listul1">
-                    <li class="listli1">
-                        <div class="Headlist">
-                            <img class="listimg1" src="/public/images/tab_associated_pre - 副本.png">
-                            <span class="listspan1">{{num}}</span>
-                        </div>
-                    </li>
-                    <li class="listli1">
-                        <div class="Headlist">
-                            <img class="listimg1" src="/public/images/tab_associated_pre - 副本.png">
-                            <span class="listspan1">{{num}}</span>
-                        </div>
-                    </li>
-                    <li class="listli1">
-                        <div class="Headlist">
-                            <img class="listimg1" src="/public/images/tab_associated_pre - 副本.png">
-                            <span class="listspan1">{{num}}</span>
-                        </div>
-                    </li>
-                    <li class="listli1">
-                        <div class="Headlist">
-                            <img class="listimg1" src="/public/images/tab_associated_pre - 副本.png">
-                            <span class="listspan1">{{num}}</span>
-                        </div>
-                    </li>
-                </ul>
+    <a href="/homepage"><img class="img1" src="/public/images/back.png" alt=""></a>
+    <span class="span">{{span}}</span>
+    <img class="img2" src="/public/images/add.png" alt="">
+</div>
+<div class="box1">
+    <span class="span1">{{span1}}</span>
+    <img class="img3" src="/public/images/addx.png" alt="">
+</div>
+<div class="listdiv1">
+    <ul class="listul1">
+        <li class="listli1">
+            <div class="Headlist">
+                <img class="listimg1" src="/public/images/tab_associated_pre - 副本.png">
+                <span class="listspan1">
+                        {{num}}
+                        <img class="shanchuimg1" src="/public/images/shanchu.jpg" alt="">
+                </span>
             </div>
+        </li>
+        <li class="listli2">
+            <div class="Headlist">
+                <img class="listimg1" src="/public/images/tab_associated_pre - 副本.png">
+                <span class="listspan1">
+                    {{num}}
+                        <img class="shanchuimg2" src="/public/images/shanchu.jpg" alt="">
+                </span>
+            </div>
+        </li>
+        <li class="listli3">
+            <div class="Headlist">
+                <img class="listimg1" src="/public/images/tab_associated_pre - 副本.png">
+                <span class="listspan1">
+                    {{num}}
+                        <img class="shanchuimg3" src="/public/images/shanchu.jpg" alt="">
+                </span>
+            </div>
+        </li>
+        <li class="listli4">
+            <div class="Headlist">
+                <img class="listimg1" src="/public/images/tab_associated_pre - 副本.png">
+                <span class="listspan1">
+                    {{num}}
+                        <img class="shanchuimg4" src="/public/images/shanchu.jpg" alt="">
+                </span>
+            </div>
+        </li>
+    </ul>
+</div>
 {% endblock %}
 
 {% block js %}
 <script src="/public/js/fontsizeset.js"></script>
+<script src="/public/js/jquery.js"></script>
+<script>
+    $('.img3').click(function () {
+        $('.box1').remove();
+    });
+    $('.shanchuimg1').click(function () {
+        $('.listli1').remove();
+    });
+    $('.shanchuimg2').click(function () {
+        $('.listli2').remove();
+    });
+    $('.shanchuimg3').click(function () {
+        $('.listli3').remove();
+    });
+    $('.shanchuimg4').click(function () {
+        $('.listli4').remove();
+    });
+    $(document).ready(function(){
+        $('.listli1').hover(function() {
+            $(".shanchuimg1").css('display', 'block');
+        }, function() {
+           $(".shanchuimg1").css('display', 'none');
+        });
+
+        $(".shanchuimg1").hover(function() {
+           $(this).css('display', 'block');;
+        }, function() {
+           $(this).css('display', 'none');
+        });
+ })
+ $(document).ready(function(){
+        $('.listli1').hover(function() {
+            $(".shanchuimg2").css('display', 'block');
+        }, function() {
+           $(".shanchuimg2").css('display', 'none');
+        });
+
+        $(".shanchuimg2").hover(function() {
+           $(this).css('display', 'block');;
+        }, function() {
+           $(this).css('display', 'none');
+        });
+ })
+ $(document).ready(function(){
+        $('.listli3').hover(function() {
+            $(".shanchuimg3").css('display', 'block');
+        }, function() {
+           $(".shanchuimg3").css('display', 'none');
+        });
+
+        $(".shanchuimg3").hover(function() {
+           $(this).css('display', 'block');;
+        }, function() {
+           $(this).css('display', 'none');
+        });
+ })
+ $(document).ready(function(){
+        $('.listli4').hover(function() {
+            $(".shanchuimg4").css('display', 'block');
+        }, function() {
+           $(".shanchuimg4").css('display', 'none');
+        });
+
+        $(".shanchuimg4").hover(function() {
+           $(this).css('display', 'block');;
+        }, function() {
+           $(this).css('display', 'none');
+        });
+ })
+</script>
 {% endblock %}

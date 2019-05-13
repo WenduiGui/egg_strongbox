@@ -15,7 +15,7 @@
         margin-top: 0.3rem;
         margin-left: 0.22rem;
     }
-    span{
+    .span{
         color: #ffffff; 
         font-size: 0.34rem;
         float: left;
@@ -119,4 +119,15 @@
       }
       .a{
         text-decoration: none;
+      }
+      .zhuce{
+        font-size: 0.24rem;
+        color: #959595;
+        float: left;
+        margin-left: 2.37rem;
+      }
+      .yinsi{
+        font-size: 0.24rem;
+        color: #1588e3;
+        /* float: left; */
       }

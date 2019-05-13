@@ -54,11 +54,12 @@
 
     }
       .dz{
-        float: left;
+        float: right;
         font-size: 20px;
         margin-top: -0.3rem;
-        margin-left: 3.07rem;
+        margin-left: 3.4rem;
         color:#d2d2d2;
+        margin-right: 0.3rem;
     }
     .sj2{
       float: left;
@@ -70,11 +71,12 @@
 
   }
     .dz2{
-      float: left;
+      float: right;
       font-size: 20px;
       margin-top: -0.3rem;
       margin-left: 2.96rem;
       color:#d2d2d2;
+      margin-right: 0.3rem;
   }     
    .sj3{
     float: left;
@@ -86,11 +88,12 @@
 
 }
   .dz3{
-    float: left;
+    float: right;
     font-size: 20px;
     margin-top: 0.35rem;
-    margin-left: 2.95rem;
+    margin-left: 3.35rem;
     color:#d2d2d2;
+    margin-right: 0.3rem;
 }
       .sj4{
   float: left;
@@ -102,11 +105,12 @@
 
 }
 .dz4{
-  float: left;
+  float: right;
   font-size: 20px;
   margin-top: -0.3rem;
-  margin-left: 3.28rem;
+  margin-left: 3.6rem;
   color:#d2d2d2;
+  margin-right: 0.3rem;
 }
     li{
       border-bottom: 1px solid #e8e8e8;
