@@ -123,13 +123,15 @@
     margin-left: 0.3rem;
 }
 
-.body .sensitivity .level .btn {
+.body .sensitivity .level li {
     float: left;
     border: 0px;
     width: 1.5rem;
     height: 0.55rem;
     border-right: 1px solid #ffffff;
     box-sizing: border-box;
+    background-color: #d9e0e6;
+    list-style: none;
 }
 
 .body .sensitivity .series {
