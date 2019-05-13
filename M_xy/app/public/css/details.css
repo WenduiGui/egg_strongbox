@@ -60,7 +60,9 @@
 .Detabody .body_top .top img {
     float: right;
     margin-right: 0.3rem;
-    margin-top: 0.28rem;
+    margin-top: 0.38rem;
+    width: 0.2rem;
+    height: 0.36rem;
 }
 
 .Detabody .body_top .bottom {
