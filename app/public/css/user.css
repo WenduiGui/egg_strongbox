@@ -34,21 +34,22 @@
 
 .box1 {
     width: 100%;
-    height: 0.87rem;
+    height: 0.7rem;
     border-bottom: 1px solid #ebcf9f;
     background-color: #f7ebbb;
 }
 
 .span1 {
     font-size: 0.27rem;
-    margin-top: 0.29rem;
+    line-height: 0.67rem;
     margin-left: 0.29rem;
     float: left;
 }
 
 .img3 {
-    margin-left: 1.13rem;
-    margin-bottom: 0.38rem;
+    margin-left: 1.18rem;
+    float: left;
+    margin-top: 0.15rem;
     width: 0.39rem;
     height: 0.39rem;
 }
